@@ -1,0 +1,31 @@
+.box {
+    border: 1px solid rgb(83, 77, 77);
+    text-align: center;
+    width: 176px;
+    margin: 6px;
+    box-shadow: 1px 2px 4px #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    .img {
+        width:176px;
+        line-height:200px;
+        height:200px;
+        color: #fff;
+        background-color:#f40;
+        text-align:center;
+    }
+
+    &:hover {
+        opacity: 0.9;
+        transform: rotate(1.2deg) scale(1.03);
+    }
+
+    // 让字数超过了就隐藏并显示...
+    .hiddenText {
+        width: 176px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+}
